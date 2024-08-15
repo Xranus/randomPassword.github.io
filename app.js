@@ -31,30 +31,19 @@ function result2() {
     }
 }
 function copyText1() {
-    // Get the text field
     var copyText = document.getElementById("result1-el");
   
-    // Select the text field
     copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
+    copyText.setSelectionRange(0, 99999);
   
-     // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
   
-    // Alert the copied text
     alert("Copied the text: " + copyText.value);
 } 
 function copyText2() {
-    // Get the text field
     var copyText = document.getElementById("result2-el");
-  
-    // Select the text field
     copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
-  
-     // Copy the text inside the text field
+    copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(copyText.value);
-  
-    // Alert the copied text
     alert("Copied the text: " + copyText.value);
 } 
